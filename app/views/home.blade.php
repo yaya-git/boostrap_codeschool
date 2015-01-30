@@ -26,7 +26,7 @@
                 <ul class="nav navbar-nav navbar-right collapse navbar-collapse">
                     <li><a href="tickets.html">Tickets</a></li>
                     <li><a href="stations.html">Stations</a></li>
-                    <li class="open">
+                    <li class="dropdown">
                         <a href="about.html" data-target="#" data-toggle="dropdown">About<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="ourstory.html">Our Story</a></li>

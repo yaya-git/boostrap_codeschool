@@ -1,0 +1,4 @@
+
+	* col-md-offset-1 => 	Se utiliza cuando se quiere dejar un espacio del tamaño de 
+				una columna del lado izquierdo. 
+		

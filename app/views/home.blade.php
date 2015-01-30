@@ -13,11 +13,29 @@
       <div class="navbar navbar-default navbar-static-top">
           <div class="container">
 <!--            <div class='col-md-12'>-->
-                <a href="/" class="navbar-brand">Blasting off with Bootstrap</a>
-                <ul class="nav navbar-nav navbar-right">
+                <div class="navbar-header">
+                    <a href="/" class="navbar-brand">Blasting off with Bootstrap</a>
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toogle navigation</span>
+                        <span class="icon-bar"></span>    
+                        <span class="icon-bar"></span>    
+                        <span class="icon-bar"></span>    
+                    </button>
+                </div>
+                <ul class="nav navbar-nav navbar-right collapse navbar-collapse">
                     <li><a href="tickets.html">Tickets</a></li>
                     <li><a href="stations.html">Stations</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li class="open">
+                        <a href="about.html" data-target="#" data-toggle="dropdown">About<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="ourstory.html">Our Story</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="http://twitter.com/note">Twitter</a></li>
+                            <li><a href="http://facebook.com/note">Facebook</a></li>
+                        </ul>                          
+                    </li>
                 </ul>
 <!--            </div>  -->            
           </div>
@@ -105,6 +123,6 @@
       </div>
        
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>    
+    <script src="{{ asset('bootstrap/js/bootstrap.min.js'); }}"></script>    
   </body>
 </html>
